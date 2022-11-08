@@ -9,7 +9,7 @@ module "vpc" {
 
 
 resource "aws_instance" "wordpress" {
-  ami                         = "ami-08c40ec9ead489470"
+  ami                         = "ami-08c40ec9ead489470 "
   instance_type               = "t2.micro"
   key_name                    = "seoul_aws"
   vpc_security_group_ids      = [aws_security_group.wordpress-sg.id]
