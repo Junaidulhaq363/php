@@ -1,4 +1,4 @@
-data "aws_subnets" "example" {
+data "aws_vpc" "example" {
   vpc_id = "vpc-00faffe55555c2c46"
 }
 
