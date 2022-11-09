@@ -3,7 +3,7 @@ data "aws_subnets" "example" {
 }
 
 data "aws_subnet" "main" {
-  for_each = data.aws_subnet_ids.example.ids
+  for_each = data.aws_subnets.example.ids
   id       = each.value
 }
 
