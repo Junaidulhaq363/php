@@ -1,5 +1,5 @@
 data "aws_subnet_ids" "example" {
-  vpc_id = "vpc-038cda520c095e939"
+  vpc_id = "vpc-00faffe55555c2c46"
 }
 
 data "aws_subnet" "main" {
