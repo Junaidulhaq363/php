@@ -2,7 +2,7 @@ resource "aws_lb_target_group" "wordpress_tg" {
   name     = "tf-wordpress-lb-tg"
   port     = 80
   protocol = "HTTP"
-  vpc_id   = data.aws_subnet_ids.example.id
+  vpc_id   = data.aws_subnets.example.id
   health_check {
     healthy_threshold   = var.health_check["healthy_threshold"]
     interval            = var.health_check["interval"]
