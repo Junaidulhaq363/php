@@ -3,7 +3,7 @@ data "aws_vpc" "example" {
 }
 
 data "aws_subnet" "main" {
-  for_each = data.aws_subnets.example.ids
+  for_each = data.aws_vpc.example.ids
   id       = each.value
 }
 
